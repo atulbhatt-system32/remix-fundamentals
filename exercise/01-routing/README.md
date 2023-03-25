@@ -2,6 +2,25 @@
 
 ## 📝 Notes
 
+Got The Error Below When Running "npm run dev" and opening the browser to
+localhost:4001 Including results for prisma/client%20 did%20 not%20
+initialize%20 yet.%20Please%20 run%20 prisma%generate
+%20and%20try%20to%20import%20it%20again.. Do you want results only for
+prisma/client%20did%20not%20initialize%20yet.%20Please%20run%20"prisma%20generate"%20and%20try%20to%20import%20it%20again.?
+@prisma/client did not initialize yet.
+
+Solution:
+
+1. npm run setup
+
+This gave me the hint that I need to install the @prisma/engines.
+
+2. npm install @prisma/engines
+
+3. npm run setup
+
+4. npm run dev
+
 ## 🤓 Background
 
 Almost everything with a URL has routing requirements. Whether it's a web app,
