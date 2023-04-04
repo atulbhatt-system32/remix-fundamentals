@@ -2,6 +2,27 @@
 
 ## 📝 Notes
 
+`loader` is deafult function that we add to our component. It runs only on the
+server and is responsible for loading the data.
+
+`useLoaderData` is a hook that we can use to get the data from the `loader`
+function.
+
+<typeof loader> is a generic function that we can use to tell TypeScript what
+type of data we are expecting to get from the `loader` function.
+
+Remix first feches the data and then redirects by default. We can change this
+behavior by adding `redirect: "manual"` to the `json` function.
+
+JSON doesn't support `undefined` values, Date objects, or functions. It changes
+them to `string`.
+
+- npx remix routes This command will show us all the routes that we have in our
+  application.
+
+- ~ is a shortcut(helper) for the root of our project. That is `~/app` is the
+  same as `./app`.
+
 ## 🤓 Background
 
 Data loading is built into Remix.
